@@ -2,14 +2,16 @@
   {
     "id": "eval_001",
     "description": "Athletic build, regular fit preference",
-    "user": {
-      "height": 180,
-      "weight": 75,
-      "chest": 98,
-      "waist": 82,
-      "fit_preference": "regular"
+    "input": {
+      "user": {
+        "height": 180,
+        "weight": 75,
+        "chest": 98,
+        "waist": 82,
+        "fit_preference": "regular"
+      },
+      "item_ids": ["top_001", "top_002", "bottom_001", "jacket_001"]
     },
-    "item_ids": ["top_001", "top_002", "bottom_001", "jacket_001"],
     "expected_recommendations": {
       "top_001":    "L",
       "top_002":    "L",
@@ -29,14 +31,16 @@
   {
     "id": "eval_002",
     "description": "Slim build, slim fit preference",
-    "user": {
-      "height": 175,
-      "weight": 65,
-      "chest": 90,
-      "waist": 74,
-      "fit_preference": "slim"
+    "input": {
+          "user": {
+            "height": 175,
+            "weight": 65,
+            "chest": 90,
+            "waist": 74,
+            "fit_preference": "slim"
+          },
+          "item_ids": ["top_001", "top_002", "bottom_001", "jacket_001"]
     },
-    "item_ids": ["top_001", "top_002", "bottom_001", "jacket_001"],
     "expected_recommendations": {
       "top_001":    "S",
       "top_002":    "S",
@@ -55,14 +59,16 @@
   {
     "id": "eval_003",
     "description": "Larger build, relaxed fit preference",
-    "user": {
-      "height": 185,
-      "weight": 95,
-      "chest": 108,
-      "waist": 94,
-      "fit_preference": "relaxed"
+    "input": {
+          "user": {
+            "height": 185,
+            "weight": 95,
+            "chest": 108,
+            "waist": 94,
+            "fit_preference": "relaxed"
+          },
+          "item_ids": ["top_001", "bottom_001", "jacket_001"]
     },
-    "item_ids": ["top_001", "bottom_001", "jacket_001"],
     "expected_recommendations": {
       "top_001":    "XXL",
       "bottom_001": "36",
@@ -80,14 +86,16 @@
   {
     "id": "eval_004",
     "description": "Average build, between-size edge case",
-    "user": {
-      "height": 172,
-      "weight": 70,
-      "chest": 94,
-      "waist": 80,
-      "fit_preference": "regular"
+    "input": {
+        "user": {
+          "height": 172,
+          "weight": 70,
+          "chest": 94,
+          "waist": 80,
+          "fit_preference": "regular"
+        },
+        "item_ids": ["top_001", "top_002", "bottom_001", "jacket_001"]
     },
-    "item_ids": ["top_001", "top_002", "bottom_001", "jacket_001"],
     "expected_recommendations": {
       "top_001":    "M",
       "top_002":    "M",

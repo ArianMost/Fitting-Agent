@@ -76,19 +76,15 @@ def create_trace(name: str, input: Any, metadata: dict | None = None) -> Optiona
     if langfuse_client is None:
         return None
 
-    trace = langfuse_client.trace(
-        name=name,
-        input=input,
-        metadata=metadata or {},
-    )
-    return trace.id
+    trace_id = langfuse_client.create_trace_id()
+    return trace_id
 
 
 def update_trace(trace_id: str, output: Any) -> None:
     if langfuse_client is None or trace_id is None:
         return
 
-    langfuse_client.trace(
+    langfuse_client.create_trace_id(
         id=trace_id,
         output=output,
     )
@@ -116,7 +112,7 @@ def score(trace_id: str, name: str, value: float, comment: str = "") -> None:
     if langfuse_client is None or trace_id is None:
         return
 
-    langfuse_client.score(
+    langfuse_client.create_score(
         trace_id=trace_id,
         name=name,
         value=value,

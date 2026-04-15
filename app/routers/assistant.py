@@ -6,7 +6,6 @@ from fastapi import APIRouter, HTTPException
 
 from app.models.assistance_response import AssistantRequest, AssistantResponse
 from app.services import agent as agent_service
-from app.services.langfuse_client import create_trace, update_trace
 
 router = APIRouter(prefix="/assistant", tags=["assistant"])
 
@@ -25,16 +24,5 @@ async def recommend_sizes(request: AssistantRequest) -> AssistantResponse:
         response = await agent_service.run_agent(request)
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
-
-    # Trace to Langfuse (no-op if not configured)
-    # trace_id = create_trace(
-    #     name="fitting_room_recommendation",
-    #     input=request.model_dump(),
-    # )
-
-    # update_trace(
-    #     trace_id,
-    #     response.model_dump(),
-    # )
 
     return response

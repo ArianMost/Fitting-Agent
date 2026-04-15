@@ -44,6 +44,38 @@ Rules:
 - If confidence is "low", mention in fit_notes that the customer should
   also try the next size up.
 - Keep fit_notes short and actionable.
+
+The response needs to be like this:
+{
+  "user": {
+    "height": 180,
+    "weight": 70,
+    "chest": 140,
+    "waist": 80,
+    "fit_preference": "regular"
+  },
+  "recommendations": [
+    {
+      "item_id": "top_001",
+      "item_name": "Classic White Oxford Shirt",
+      "category": "top",
+      "recommended_size": "M",
+      "confidence": "low",
+      "reasoning": "Your chest is 140 cm...",
+      "fit_notes": "Confidence is low. You should also try the next size up."
+    },
+    {
+      "item_id": "top_002",
+      "item_name": "Slim-Fit Polo",
+      "category": "top",
+      "recommended_size": "L",
+      "confidence": "low",
+      "reasoning": Your waist is 90 cm...,
+      "fit_notes": "Confidence is low. You should also try the next size up."
+    },
+  ],
+  "general_advice": "Unable to provide specific body type advice as the required tool is not available."
+}
 """
 
 # ── Model + agent ─────────────────────────────────────────────────────────────
