@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "name": "Alex",
+      "height": 180,
+      "weight": 75,
+      "chest": 98,
+      "waist": 82,
+      "fit_preference": "regular"
+    },
+    {
+      "id": "user_002",
+      "name": "Jordan",
+      "height": 165,
+      "weight": 58,
+      "chest": 86,
+      "waist": 68,
+      "fit_preference": "slim"
+    }
+  ]
+}

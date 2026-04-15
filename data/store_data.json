@@ -1,0 +1,98 @@
+{
+  "items": [
+    {
+      "id": "top_001",
+      "name": "Classic White Oxford Shirt",
+      "category": "top",
+      "brand": "FitWear",
+      "price": 59.99,
+      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "size_chart": {
+        "XS":  { "chest": 88,  "waist": 72,  "length": 70 },
+        "S":   { "chest": 92,  "waist": 76,  "length": 72 },
+        "M":   { "chest": 96,  "waist": 80,  "length": 74 },
+        "L":   { "chest": 100, "waist": 84,  "length": 76 },
+        "XL":  { "chest": 104, "waist": 88,  "length": 78 },
+        "XXL": { "chest": 110, "waist": 94,  "length": 80 }
+      }
+    },
+    {
+      "id": "top_002",
+      "name": "Slim-Fit Polo",
+      "category": "top",
+      "brand": "UrbanEdge",
+      "price": 39.99,
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "size_chart": {
+        "XS": { "chest": 86,  "waist": 70,  "length": 68 },
+        "S":  { "chest": 90,  "waist": 74,  "length": 70 },
+        "M":  { "chest": 94,  "waist": 78,  "length": 72 },
+        "L":  { "chest": 98,  "waist": 82,  "length": 74 },
+        "XL": { "chest": 102, "waist": 86,  "length": 76 }
+      }
+    },
+    {
+      "id": "bottom_001",
+      "name": "Straight-Leg Chinos",
+      "category": "bottom",
+      "brand": "FitWear",
+      "price": 69.99,
+      "sizes": ["28", "30", "32", "34", "36", "38"],
+      "size_chart": {
+        "28": { "waist": 72, "hip": 88,  "inseam": 80 },
+        "30": { "waist": 76, "hip": 92,  "inseam": 81 },
+        "32": { "waist": 82, "hip": 96,  "inseam": 82 },
+        "34": { "waist": 86, "hip": 100, "inseam": 82 },
+        "36": { "waist": 90, "hip": 104, "inseam": 83 },
+        "38": { "waist": 96, "hip": 110, "inseam": 83 }
+      }
+    },
+    {
+      "id": "bottom_002",
+      "name": "Tapered Jogger",
+      "category": "bottom",
+      "brand": "UrbanEdge",
+      "price": 49.99,
+      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "size_chart": {
+        "XS":  { "waist": 68, "hip": 86,  "inseam": 76 },
+        "S":   { "waist": 72, "hip": 90,  "inseam": 78 },
+        "M":   { "waist": 78, "hip": 94,  "inseam": 80 },
+        "L":   { "waist": 84, "hip": 98,  "inseam": 80 },
+        "XL":  { "waist": 90, "hip": 104, "inseam": 81 },
+        "XXL": { "waist": 96, "hip": 110, "inseam": 81 }
+      }
+    },
+    {
+      "id": "jacket_001",
+      "name": "Casual Denim Jacket",
+      "category": "jacket",
+      "brand": "DenimCo",
+      "price": 99.99,
+      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "size_chart": {
+        "XS":  { "chest": 90,  "waist": 74,  "length": 58 },
+        "S":   { "chest": 94,  "waist": 78,  "length": 60 },
+        "M":   { "chest": 98,  "waist": 82,  "length": 62 },
+        "L":   { "chest": 102, "waist": 86,  "length": 64 },
+        "XL":  { "chest": 106, "waist": 90,  "length": 66 },
+        "XXL": { "chest": 112, "waist": 96,  "length": 68 }
+      }
+    },
+    {
+      "id": "dress_001",
+      "name": "Wrap Midi Dress",
+      "category": "dress",
+      "brand": "FitWear",
+      "price": 79.99,
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "size_chart": {
+        "XS": { "chest": 84,  "waist": 68,  "hip": 90,  "length": 110 },
+        "S":  { "chest": 88,  "waist": 72,  "hip": 94,  "length": 112 },
+        "M":  { "chest": 92,  "waist": 76,  "hip": 98,  "length": 114 },
+        "L":  { "chest": 96,  "waist": 80,  "hip": 102, "length": 116 },
+        "XL": { "chest": 100, "waist": 84,  "hip": 106, "length": 118 }
+      }
+    }
+  ]
+}
